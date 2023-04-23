@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  </body>
+</html>
+
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Brainster Prasalnik</h1>
+      <p id="description" class="description text-center">
+        Vi Blagodarime sto posvetivte del od vaseto dragoceno vreme
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Ime</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Vnesete go vaseto ime"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Vnesete go vasiot Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Godini<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Godini"
+        />
+      </div>
+      <div class="form-group">
+        <p>Koja od navedenite opcii  najubavo ja opisuva vasata uloga?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Odberete enda od navedenite opcii</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Rabota</option>
+          <option value="learner">Full Time Ucenik</option>
+          <option value="preferNo">Ne bi sakal da odgovoram</option>
+          <option value="other">Drugo</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Dali bi ja preporacal Brainster Akademijata na prijatel?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitivno</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Mozebi</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Ne sum siguren</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Koja del od akademijata ti e omilen?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Odberi edna od dadenite opcii</option>
+          <option value="challenges">Zadadeni zadaci</option>
+          <option value="projects">Proekti</option>
+          <option value="community">Zaednica</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Sto bi sakal da se podobri?
+          <span class="clue">(odberi od dadenite opcii)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Front-end Proekti</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Back-end Proekti</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            class="input-checkbox"
+          />Data Visualization</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Zadadeni zadaci</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="open-source-community"
+            type="checkbox"
+            class="input-checkbox"
+          />Open Source Zaednica</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="gitter-help-rooms"
+            type="checkbox"
+            class="input-checkbox"
+          />Gitter help rooms</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Videa</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="city-meetups"
+            type="checkbox"
+            class="input-checkbox"
+          />City Meetups</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="wiki"
+            type="checkbox"
+            class="input-checkbox"
+          />Wiki</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="forum"
+            type="checkbox"
+            class="input-checkbox"
+          />Forum</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="additional-courses"
+            type="checkbox"
+            class="input-checkbox"
+          />Pomosni kursevi</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>Komentari ili sugestii?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Vnesi komentar ili sugestija..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Zacuvaj
+        </button>
+      </div>
+    </form>
+  </div>
